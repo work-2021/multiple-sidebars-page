@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multiple Sidebars Page</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="shadow"></div>
+  <div class="sidebars-btn">
+    <button data-show="left"><img src="images/arrow-left.svg" alt="icon arrow" /></button>
+    <button data-show="right"><img  src="images/arrow-left.svg" alt="icon arrow" /></button>
+  </div>
+  <div class="left-side">
+    <div class="search">
+      <form novalidate autocomplete="off">
+        <div>
+          <input type="text" id="search" placeholder="search" required />
+          <p>
+            <img src="images/error.svg" alt="error icon" />
+            <span></span>
+          </p>
+        </div>
+        <button>Search</button>
+      </form>
+    </div>
+    <div class="members">
+      <div class="title">
+        <h2>Members</h2>
+      </div>
+      <div class="content">
+        <div class="filter">
+          <button data-filter="newest">Newest</button>
+          <button data-filter="active">Active</button>
+          <button data-filter="popular">Popular</button>
+        </div>
+        <div class="member popular">
+          <div class="member-logo">
+            <img src="images/photo-icon.svg" alt="member logo" />
+          </div>
+          <div class="member-info">
+            <span>Renee Gomez</span>
+            <span>14 friends</span>
+          </div>
+        </div>
+        <div class="member newest active">
+          <div class="member-logo">
+            <img src="images/photo-icon.svg" alt="member logo" />
+          </div>
+          <div class="member-info">
+            <span>Malivai Washington</span>
+            <span>10 friends</span>
+          </div>
+        </div>
+        <div class="member popular">
+          <div class="member-logo">
+            <img src="images/photo-icon.svg" alt="member logo" />
+          </div>
+          <div class="member-info">
+            <span>Dan</span>
+            <span>9 friends</span>
+          </div>
+        </div>
+        <div class="member active popular">
+          <div class="member-logo">
+            <img src="images/photo-icon.svg" alt="member logo" />
+          </div>
+          <div class="member-info">
+            <span>Chynna Phillips</span>
+            <span>9 friends</span>
+          </div>
+        </div>
+        <div class="member newest">
+          <div class="member-logo">
+            <img src="images/photo-icon.svg" alt="member logo" />
+          </div>
+          <div class="member-info">
+            <span>Justin Duchscherer</span>
+            <span>7 friends</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="groups">
+      <div class="title">
+        <h2>Groups</h2>
+      </div>
+      <div class="content">
+        <div class="filter">
+          <button data-filter="newest">Newest</button>
+          <button data-filter="active">Active</button>
+          <button data-filter="popular">Popular</button>
+          <button data-filter="alphbet">Alphbetical</button>
+        </div>
+        <div class="group newest">
+          <div class="group-logo">
+            <img src="images/photo-icon.svg" alt="group logo" />
+          </div>
+          <div class="group-info">
+            <span>The Tourist</span>
+            <span>3 years, 8 months ago</span>
+          </div>
+        </div>
+        <div class="group active newest">
+          <div class="group-logo">
+            <img src="images/photo-icon.svg" alt="group logo" />
+          </div>
+          <div class="group-info">
+            <span>The Social Network</span>
+            <span>3 years, 8 months ago</span>
+          </div>
+        </div>
+        <div class="group popular">
+          <div class="group-logo">
+            <img src="images/photo-icon.svg" alt="group logo" />
+          </div>
+          <div class="group-info">
+            <span>Monsters, Inc.</span>
+            <span>4 years, 7 months ago</span>
+          </div>
+        </div>
+        <div class="group popular active">
+          <div class="group-logo">
+            <img src="images/photo-icon.svg" alt="group logo" />
+          </div>
+          <div class="group-info">
+            <span>Elizabethan</span>
+            <span>4 years, 7 months ago</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recently">
+      <div class="title">
+        <h2>Recently Active</h2>
+      </div>
+      <div class="content">
+        <img src="images/photo-icon.svg" alt="member logo" />
+        <img src="images/photo-icon.svg" alt="member logo" />
+        <img src="images/photo-icon.svg" alt="member logo" />
+        <img src="images/photo-icon.svg" alt="member logo" />
+        <img src="images/photo-icon.svg" alt="member logo" />
+        <img src="images/photo-icon.svg" alt="member logo" />
+        <img src="images/photo-icon.svg" alt="member logo" />
+        <img src="images/photo-icon.svg" alt="member logo" />
+        <img src="images/photo-icon.svg" alt="member logo" />
+        <img src="images/photo-icon.svg" alt="member logo" />
+        <img src="images/photo-icon.svg" alt="member logo" />
+        <img src="images/photo-icon.svg" alt="member logo" />
+        <img src="images/photo-icon.svg" alt="member logo" />
+        <img src="images/photo-icon.svg" alt="member logo" />
+        <img src="images/photo-icon.svg" alt="member logo" />
+      </div>
+    </div>
+    <div class="schedule">
+      <div class="title">
+        <h2>The Schedule</h2>
+      </div>
+      <div class="calendar">
+        <span>20 February 2022</span>
+        <div class="days">
+          <div class="name">
+            <span>SA</span>
+            <span class="active">SU</span>
+            <span>MO</span>
+            <span>TU</span>
+            <span>WE</span>
+            <span>TH</span>
+            <span>FR</span>
+          </div>
+          <div class="number">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            <span>11</span>
+            <span>12</span>
+            <span>13</span>
+            <span>14</span>
+            <span>15</span>
+            <span>16</span>
+            <span>17</span>
+            <span>18</span>
+            <span>19</span>
+            <span class="active">20</span>
+            <span>21</span>
+            <span>22</span>
+            <span>23</span>
+            <span>24</span>
+            <span>25</span>
+            <span>26</span>
+            <span>27</span>
+            <span>28</span>
+          </div>
+        </div>
+        <button>
+          <img src="images/arrow-left.svg" alt="arrow left icon" />
+          <span>April</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="slider">
+      <div class="title">
+        <h1>Welcome to The Community!</h1>
+      </div>
+      <div class="images">
+        <img class="show" src="images/img-slider-one.png" alt="some community concepts" />
+        <img src="images/img-slider-two.jpg" alt="some community concepts" />
+        <img src="images/img-slider-three.png" alt="some community concepts" />
+      </div>
+      <ul class="indicator">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="latest-activity">
+      <div class="title">
+        <h2>Latest Activity</h2>
+      </div>
+      <div class="content">
+        <div class="activity">
+          <div class="logo">
+            <img src="images/photo-icon.svg" alt="logo icon" />
+          </div>
+          <div class="a-content">
+            <div class="info">
+              <p><b>Michellie Jones</b> posted an update in the group <b>The Social Network</b></p>
+              <span>4 years, 7 months ago</span>
+            </div>
+            <div class="text">
+              Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away. (Antoine de Saint Exupery)
+            </div>
+          </div>
+        </div>
+        <div class="activity">
+          <div class="logo">
+            <img src="images/photo-icon.svg" alt="logo icon" />
+          </div>
+          <div class="a-content">
+            <div class="info">
+              <p><b>Monta Ellis</b> posted an update in the group <b>The Tourist</b></p>
+              <span>4 years, 7 months ago</span>
+            </div>
+            <div class="text">
+              Victory goes to the player who makes the next-to-last mistake. (Chessmaster Savielly Grigorievitch Tartakower)
+            </div>
+          </div>
+        </div>
+        <div class="activity">
+          <div class="logo">
+            <img src="images/photo-icon.svg" alt="logo icon" />
+          </div>
+          <div class="a-content">
+            <div class="info">
+              <p><b>Picabo Street</b> posted an update in the group <b>Monsters, Inc.</b></p>
+              <span>4 years, 7 months ago</span>
+            </div>
+            <div class="text">
+              I think "Hail to the Chief has a nice ring to it. (John F. Kennedywhen asked what is his favorite song)<br><i>Efficiently evisculate ubiquitous alignments through scalable web-readiness. Phosfluorescently restore resource-leveling growth strategies for multifunctional best practices.</i><br> Energistically enhance real-time synergy for future-proof. [Read more]
+            </div>
+          </div>
+        </div>
+        <div class="activity">
+          <div class="logo">
+            <img src="images/photo-icon.svg" alt="logo icon" />
+          </div>
+          <div class="a-content">
+            <div class="info">
+              <p><b>Malivai Washington</b> posted an update</p>
+              <span>4 years, 7 months ago</span>
+            </div>
+            <div class="text">
+              Try to learn something about everything and everything about something. (Thomas Henry Huxley)
+            </div>
+          </div>
+        </div>
+        <div class="activity">
+          <div class="logo">
+            <img src="images/photo-icon.svg" alt="logo icon" />
+          </div>
+          <div class="a-content">
+            <div class="info">
+              <p><b>Seamus</b> posted an update</p>
+              <span>4 years, 7 months ago</span>
+            </div>
+            <div class="text">
+              To love oneself is the beginning of a lifelong romance. (Oscar Wilde)
+            </div>
+          </div>
+        </div>
+        <button>Load More</button>
+      </div>
+    </div>
+    <div class="latest-posts">
+      <div class="title">
+        <h2>Latest Posts</h2>
+      </div>
+      <div class="content">
+        <div class="post">
+          <div class="post-img">
+            <img src="images/photo-icon.svg" alt="post image" />
+          </div>
+          <div class="post-info">
+            <h3>Phosfluorescently procrastinate standards</h3>
+            <p>Dramatically pursue innovative services before out-of-the-box metrics. Professionally seize web-enabled services before distinctive internal or "organic" sources fo...</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-img">
+            <img src="images/photo-icon.svg" alt="post image" />
+          </div>
+          <div class="post-info">
+            <h3>Dynamically provide access to interoperable</h3>
+            <p>Proactively foster superior growth strategies and adaptive users. Conveniently deploy timely strategic theme areas vis-a-vis B2B scenarios. Progressively cultivate viral partnerships after state of th...</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-img">
+            <img src="images/photo-icon.svg" alt="post image" />
+          </div>
+          <div class="post-info">
+            <h3>Uniquely promote resource-leveling platforms</h3>
+            <p>Proactively foster superior growth strategies and adaptive users. Conveniently deploy timely strategic theme areas vis-a-vis B2B scenarios. Progressively cultivate viral partnerships after state of th...</p>
+          </div>
+        </div>
+        <ul class="show">
+          <li class="active">1</li>
+          <li>2</li>
+        </ul>
+      </div>
+    </div>
+    <div class="features">
+      <div class="title">
+        <h2>The Features</h2>
+      </div>
+      <div class="content">
+        <div class="feature">
+          <div class="feature-img">
+            <img src="images/photo-icon.svg" alt="feature image" />
+          </div>
+          <h3>Professionally pursue world-class applications</h3>
+        </div>
+        <div class="feature">
+          <div class="feature-img">
+            <img src="images/photo-icon.svg" alt="feature image" />
+          </div>
+          <h3>Holisticly evolve highly efficient</h3>
+        </div>
+        <div class="feature">
+          <div class="feature-img">
+            <img src="images/photo-icon.svg" alt="feature image" />
+          </div>
+          <h3>Professionally drive ubiquitous technology</h3>
+        </div>
+        <div class="feature">
+          <div class="feature-img">
+            <img src="images/photo-icon.svg" alt="feature image" />
+          </div>
+          <h3>Uniquely promote resource-leveling platforms</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right-side">
+    <div class="sign-in">
+      <div class="title">
+        <h2>Sign In</h2>
+      </div>
+      <div class="content">
+        <form novalidate autocomplete="off">
+          <div>
+            <input type="text" id="userName" placeholder="User Name" required />
+            <p>
+              <img src="images/error.svg" alt="error icon" />
+              <span></span>
+            </p>
+          </div>
+          <div>
+            <input type="password" id="password" placeholder="Password" required />
+            <p>
+              <img src="images/error.svg" alt="error icon" />
+              <span></span>
+            </p>
+          </div>
+          <div>
+            <label for="rememberMe">
+              <input type="checkbox" id="rememberMe" />
+              <span>Remember Me</span>
+            </label>
+          </div>
+          <div>
+            <button type="submit">Sign In</button>
+          </div>
+          <div class="lost">
+            <img src="images/question-mark.svg" alt="question mark icon" />
+            <a href="">Lost Password</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="statistics">
+      <div class="title">
+        <h2>Statistics</h2>
+      </div>
+      <div class="content">
+        <div>
+          <img src="images/post.svg" alt="posts icon" />
+          <h3>Posts</h3>
+          <span>64</span>
+        </div>
+        <div>
+          <img src="images/comment.svg" alt="comments icon" />
+          <h3>Comments</h3>
+          <span>52</span>
+        </div>
+        <div>
+          <img src="images/activity.svg" alt="activity icon" />
+          <h3>Activity</h3>
+          <span>13</span>
+        </div>
+        <div>
+          <img src="images/member.svg" alt="members icon" />
+          <h3>Members</h3>
+          <span>20</span>
+        </div>
+        <div>
+          <img src="images/group.svg" alt="groups icon" />
+          <h3>Groups</h3>
+          <span>25</span>
+        </div>
+        <div>
+          <img src="images/forum.svg" alt="forums icon" />
+          <h3>Forums</h3>
+          <span>5</span>
+        </div>
+        <div>
+          <img src="images/topic.svg" alt="topics icon" />
+          <h3>Topics</h3>
+          <span>8</span>
+        </div>
+      </div>
+    </div>
+    <div class="who-online">
+      <div class="title">
+        <h2>Who's Online</h2>
+      </div>
+      <div class="content">
+        There are no users currently online.
+      </div>
+    </div>
+    <div class="recent-replies">
+      <div class="title">
+        <h2>Recent Replies</h2>
+      </div>
+      <div class="content">
+        <div class="reply">
+          <p>Uniquely pontificate standards compliant</p>
+          <span>4 years ago</span>
+        </div>
+        <div class="reply">
+          <p>Quickly expedite holistic e-tailers</p>
+          <span>4 years, 7 months ago</span>
+        </div>
+        <div class="reply">
+          <p>Intrinsicly parallel task cross- platform</p>
+          <span>4 years, 7 months ago</span>
+        </div>
+      </div>
+    </div>
+    <div class="recent-topics">
+      <div class="title">
+        <h2>Recent Topics</h2>
+      </div>
+      <div class="content">
+        <div class="topic">
+          <p>Uniquely pontificate standards compliant <i>by</i> Michellie Jones</p>
+          <span>4 years ago</span>
+        </div>
+        <div class="topic">
+          <p>Quickly expedite holistic e-tailers <i>by</i> Justin Duchscherer</p>
+          <span>4 years, 7 months ago</span>
+        </div>
+        <div class="topic">
+          <p>Dynamically conceptualize <i>by</i> Justin Duchscherer</p>
+          <span>4 years, 7 months ago</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
